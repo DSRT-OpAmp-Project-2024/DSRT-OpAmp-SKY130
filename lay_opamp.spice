@@ -1,0 +1,42 @@
+* NGSPICE file created from opamp.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_FMZK9W a_400_n200# a_n458_n200# a_n400_n288# a_n560_n374#
+X0 a_400_n200# a_n400_n288# a_n458_n200# a_n560_n374# sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=4
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_GWPMZG a_n200_n897# a_200_n800# w_n396_n1019#
++ a_n258_n800#
+X0 a_200_n800# a_n200_n897# a_n258_n800# w_n396_n1019# sky130_fd_pr__pfet_01v8_lvt ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD w_n596_n619# a_n400_n497# a_400_n400# a_n458_n400#
+X0 a_400_n400# a_n400_n497# a_n458_n400# w_n596_n619# sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=4
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_3VR9VM w_n296_n319# a_n100_n197# a_100_n100# a_n158_n100#
+X0 a_100_n100# a_n100_n197# a_n158_n100# w_n296_n319# sky130_fd_pr__pfet_01v8_lvt ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_FMMQLY a_100_n50# a_n100_n138# a_n260_n224# a_n158_n50#
+X0 a_100_n50# a_n100_n138# a_n158_n50# a_n260_n224# sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_FMHZDY a_n800_n138# a_n960_n224# a_n858_n50# a_800_n50#
+X0 a_800_n50# a_n800_n138# a_n858_n50# a_n960_n224# sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=8
+.ends
+
+.subckt opamp DIFFOUT MINUS PLUS ADJ VCC VSS
+XXM12 m1_2656_38# VSS XM12/a_n400_n288# VSUBS sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXML MINUS m1_2268_112# XM8/w_n296_n319# VCC sky130_fd_pr__pfet_01v8_lvt_GWPMZG
+XXM18 m1_1104_n1498# VSS m1_1104_n1498# VSUBS sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXMR PLUS m1_1104_n1498# XM8/w_n296_n319# VCC sky130_fd_pr__pfet_01v8_lvt_GWPMZG
+XXM2 m1_2268_112# VSS m1_2268_112# VSUBS sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXM5 XM8/w_n296_n319# m1_2656_38# DIFFOUT VCC sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD
+XXM6 DIFFOUT VSS m1_1104_n1498# VSUBS sky130_fd_pr__nfet_01v8_lvt_FMZK9W
+XXM8 XM8/w_n296_n319# ADJ m1_5206_118# VCC sky130_fd_pr__pfet_01v8_lvt_3VR9VM
+XXM9 m1_6070_n1948# ADJ VSUBS m1_5206_118# sky130_fd_pr__nfet_01v8_lvt_FMMQLY
+XXM54 XM8/w_n296_n319# m1_2656_38# m1_2656_38# VCC sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD
+XXM10 VCC VSUBS m1_6144_n1660# VSS sky130_fd_pr__nfet_01v8_lvt_FMHZDY
+R0 m1_6144_n1660# m1_6070_n1948# sky130_fd_pr__res_generic_m1 w=0.18 l=1.03
+.ends
+

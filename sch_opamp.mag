@@ -1,0 +1,101 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1718398029
+<< error_s >>
+rect 2946 1809 2981 1843
+rect 2947 1790 2981 1809
+rect 1068 697 1103 731
+rect 2261 714 2295 732
+rect 1069 678 1103 697
+rect 1088 -17 1103 678
+rect 1122 644 1157 678
+rect 1122 -17 1156 644
+rect 1122 -51 1137 -17
+rect 2225 -70 2295 714
+rect 2225 -106 2278 -70
+rect 2966 -123 2981 1790
+rect 3000 1756 3035 1790
+rect 3000 -123 3034 1756
+rect 7102 797 7137 831
+rect 7103 778 7137 797
+rect 3686 555 3720 573
+rect 3686 519 3756 555
+rect 3703 485 3774 519
+rect 4824 485 4859 519
+rect 6017 502 6051 520
+rect 3000 -157 3015 -123
+rect 3703 -176 3773 485
+rect 4825 466 4859 485
+rect 3703 -212 3756 -176
+rect 4844 -229 4859 466
+rect 4878 432 4913 466
+rect 4878 -229 4912 432
+rect 4878 -263 4893 -229
+rect 5981 -282 6051 502
+rect 5981 -318 6034 -282
+rect 7122 -335 7137 778
+rect 7156 744 7191 778
+rect 7156 -335 7190 744
+rect 8242 125 8276 179
+rect 7156 -369 7171 -335
+rect 8261 -388 8276 125
+rect 8295 91 8330 125
+rect 8295 -388 8329 91
+rect 8781 -10 8815 8
+rect 8781 -46 8851 -10
+rect 8798 -80 8869 -46
+rect 9319 -80 9354 -46
+rect 8295 -422 8310 -388
+rect 8798 -441 8868 -80
+rect 9320 -99 9354 -80
+rect 8798 -477 8851 -441
+rect 9339 -494 9354 -99
+rect 9373 -133 9408 -99
+rect 9373 -494 9407 -133
+rect 9373 -528 9388 -494
+use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM2 ~/DSRT-OpAmp-SKY130
+timestamp 1718384992
+transform 1 0 1682 0 1 304
+box -596 -410 596 410
+use sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD  XM5 ~/DSRT-OpAmp-SKY130
+timestamp 1718386213
+transform 1 0 7716 0 1 195
+box -596 -619 596 619
+use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM6
+timestamp 1718384992
+transform 1 0 4299 0 1 145
+box -596 -410 596 410
+use sky130_fd_pr__pfet_01v8_lvt_3VR9VM  XM8 ~/DSRT-OpAmp-SKY130
+timestamp 1718384992
+transform 1 0 8555 0 1 -158
+box -296 -319 296 319
+use sky130_fd_pr__nfet_01v8_lvt_FMMQLY  XM9 ~/DSRT-OpAmp-SKY130
+timestamp 1718384992
+transform 1 0 9094 0 1 -270
+box -296 -260 296 260
+use sky130_fd_pr__nfet_01v8_lvt_FMHZDY  XM10 ~/DSRT-OpAmp-SKY130
+timestamp 1718384992
+transform 1 0 10333 0 1 -323
+box -996 -260 996 260
+use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM12
+timestamp 1718384992
+transform 1 0 5438 0 1 92
+box -596 -410 596 410
+use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM18
+timestamp 1718384992
+transform 1 0 543 0 1 357
+box -596 -410 596 410
+use sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD  XM54
+timestamp 1718386213
+transform 1 0 6577 0 1 248
+box -596 -619 596 619
+use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XML ~/DSRT-OpAmp-SKY130
+timestamp 1718384992
+transform 1 0 3360 0 1 807
+box -396 -1019 396 1019
+use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XMR
+timestamp 1718384992
+transform 1 0 2621 0 1 860
+box -396 -1019 396 1019
+<< end >>

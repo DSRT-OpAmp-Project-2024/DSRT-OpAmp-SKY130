@@ -1,0 +1,32 @@
+** sch_path: /home/ahmadjabar/DSRT-OpAmp-SKY130/schematic/opamp.sch
+**.subckt opamp DIFFOUT MINUS PLUS ADJ VCC VSS
+*.ipin PLUS
+*.ipin MINUS
+*.ipin VSS
+*.ipin VCC
+*.opin DIFFOUT
+*.ipin ADJ
+XM18 G2 G2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0 nrs=0
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 G1 G1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0 nrs=0
++ sa=0 sb=0 sd=0 mult=1 m=1
+XMR G2 PLUS VCC VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XML G1 MINUS VCC VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM6 DIFFOUT G2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM12 net1 G1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM54 net1 net1 VCC VCC sky130_fd_pr__pfet_01v8_lvt L=4 W=4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM5 DIFFOUT net1 VCC VCC sky130_fd_pr__pfet_01v8_lvt L=4 W=4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM8 G1 ADJ VCC VCC sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='W * 0.29' as='W * 0.29' pd='W + 2 * 0.29' ps='W + 2 * 0.29' nrd=0 nrs=0
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 G1 ADJ net2 VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='W + 2 * 0.29' ps='W + 2 * 0.29' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net2 VCC VSS VSS sky130_fd_pr__nfet_01v8_lvt L=8 W=0.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2*(W + 0.29)' ps='2*(W + 0.29)' nrd=0
++ nrs=0 sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+.end
