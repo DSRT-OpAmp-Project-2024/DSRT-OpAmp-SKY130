@@ -37,5 +37,6 @@ XXM8 XM8/w_n296_n319# ADJ m1_5206_118# VCC sky130_fd_pr__pfet_01v8_lvt_3VR9VM
 XXM9 m1_6070_n1948# ADJ VSUBS m1_5206_118# sky130_fd_pr__nfet_01v8_lvt_FMMQLY
 XXM54 XM8/w_n296_n319# VCC VCC VCC sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD
 XXM10 VCC VSUBS m1_6144_n1660# VSS sky130_fd_pr__nfet_01v8_lvt_FMHZDY
+R0 m1_6144_n1660# m1_6070_n1948# sky130_fd_pr__res_generic_m1 w=0.18 l=1.03
 .ends
 

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718401360
+timestamp 1720781785
 << pwell >>
 rect 878 -2152 8246 -1314
 << metal1 >>
@@ -61,7 +61,8 @@ rect 2296 -1498 3072 -1254
 rect 3160 -1536 3200 -1254
 rect 3520 -1218 3570 -302
 rect 4708 -504 4752 -292
-rect 4618 -704 4818 -504
+rect 4618 -580 4816 -504
+rect 4618 -704 4818 -580
 rect 4708 -1190 4750 -704
 rect 5280 -1002 5320 106
 rect 6182 -52 6378 644
@@ -135,47 +136,47 @@ rect 5000 -1528 5012 -1462
 rect 5082 -1528 5096 -1462
 rect 5000 -1542 5096 -1528
 use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM2
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 1476 0 1 -1740
 box -596 -410 596 410
 use sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD  XM5
-timestamp 1718400045
+timestamp 1720781306
 transform 1 0 4230 0 1 515
 box -596 -619 596 619
 use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM6
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 5068 0 1 -1742
 box -596 -410 596 410
 use sky130_fd_pr__pfet_01v8_lvt_3VR9VM  XM8
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 5116 0 1 217
 box -296 -319 296 319
 use sky130_fd_pr__nfet_01v8_lvt_FMMQLY  XM9
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 5956 0 1 -1894
 box -296 -260 296 260
 use sky130_fd_pr__nfet_01v8_lvt_FMHZDY  XM10
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 7252 0 1 -1896
 box -996 -260 996 260
 use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM12
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 3878 0 1 -1736
 box -596 -410 596 410
 use sky130_fd_pr__nfet_01v8_lvt_FMZK9W  XM18
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 2688 0 1 -1738
 box -596 -410 596 410
 use sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD  XM54
-timestamp 1718400045
+timestamp 1720781306
 transform 1 0 3052 0 1 513
 box -596 -619 596 619
 use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XML
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 2076 0 1 915
 box -396 -1019 396 1019
 use sky130_fd_pr__pfet_01v8_lvt_GWPMZG  XMR
-timestamp 1718384992
+timestamp 1720781306
 transform 1 0 1300 0 1 913
 box -396 -1019 396 1019
 << labels >>
@@ -185,7 +186,7 @@ flabel metal1 574 -2896 774 -2696 0 FreeSans 256 0 0 0 VSS
 port 5 nsew
 flabel metal1 6180 -278 6380 -78 0 FreeSans 256 0 0 0 ADJ
 port 3 nsew
-flabel metal1 4618 -704 4818 -504 0 FreeSans 256 0 0 0 DIFFOUT
+flabel metal1 4618 -704 4816 -504 0 FreeSans 256 0 0 0 DIFFOUT
 port 0 nsew
 flabel metal1 1968 1950 2168 2150 0 FreeSans 256 0 0 0 MINUS
 port 1 nsew

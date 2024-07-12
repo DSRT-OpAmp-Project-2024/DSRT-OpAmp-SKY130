@@ -1,173 +1,164 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
-
-Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FMZK9W in circuit opamp (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_GWPMZG in circuit opamp (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_ZQZ9VD in circuit opamp (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_3VR9VM in circuit opamp (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FMMQLY in circuit opamp (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_FMHZDY in circuit opamp (0)(1 instance)
-
 Subcircuit summary:
-Circuit 1: opamp                           |Circuit 2: sch_opamp.spice                 
+Circuit 1: sch_opamp.spice                 |Circuit 2: opamp                           
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8_lvt (6)            |sky130_fd_pr__nfet_01v8_lvt (6)            
 sky130_fd_pr__pfet_01v8_lvt (5)            |sky130_fd_pr__pfet_01v8_lvt (5)            
 Number of devices: 11                      |Number of devices: 11                      
-Number of nets: 13 **Mismatch**            |Number of nets: 10 **Mismatch**            
+Number of nets: 10 **Mismatch**            |Number of nets: 13 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: opamp                           |Circuit 2: sch_opamp.spice                 
+Circuit 1: sch_opamp.spice                 |Circuit 2: opamp                           
 
 ---------------------------------------------------------------------------------------
-Net: VCC                                   |Net: PLUS                                  
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    |                                           
-  sky130_fd_pr__pfet_01v8_lvt/2 = 2        |                                           
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
+Net: PLUS                                  |Net: XM12/a_n400_n288#                     
+  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
                                            |                                           
-Net: VSS                                   |Net: MINUS                                 
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 6    |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__nfet_01v8_lvt/2 = 2        |                                           
+Net: MINUS                                 |Net: m1_6070_n1948#                        
+  sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
                                            |                                           
-Net: XM12/a_n400_n288#                     |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
+(no matching net)                          |Net: m1_6144_n1660#                        
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
                                            |                                           
-Net: m1_6070_n1948#                        |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: m1_6144_n1660#                        |(no matching net)                          
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-                                           |                                           
-Net: m1_2268_112#                          |(no matching net)                          
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
-                                           |                                           
-Net: XM8/w_n296_n319#                      |(no matching net)                          
-  sky130_fd_pr__pfet_01v8_lvt/4 = 5        |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
 (no matching net)                          |Net: VCC                                   
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 5    
-                                           |  sky130_fd_pr__pfet_01v8_lvt/4 = 5        
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    
+                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 2        
                                            |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
                                            |                                           
 (no matching net)                          |Net: VSS                                   
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 5    
-                                           |  sky130_fd_pr__nfet_01v8_lvt/4 = 6        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: net1                                  
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 6    
                                            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 2        
-                                           |                                           
-(no matching net)                          |Net: G2                                    
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
                                            |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+                                           |                                           
+(no matching net)                          |Net: m1_2268_112#                          
                                            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+                                           |                                           
+(no matching net)                          |Net: XM8/w_n296_n319#                      
+                                           |  sky130_fd_pr__pfet_01v8_lvt/4 = 5        
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: m1_5206_118#                          |Net: net2                                  
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+Net: net2                                  |Net: m1_5206_118#                          
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
                                            |                                           
 Net: ADJ                                   |Net: ADJ                                   
   sky130_fd_pr__pfet_01v8_lvt/2 = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 1        
   sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
                                            |                                           
 Net: DIFFOUT                               |Net: DIFFOUT                               
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
   sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: VSUBS                                 |Net: G1                                    
-  sky130_fd_pr__nfet_01v8_lvt/4 = 6        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
-                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+Net: G1                                    |Net: VSUBS                                 
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/4 = 6        
+  sky130_fd_pr__nfet_01v8_lvt/2 = 2        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VCC                                   |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 5    |                                           
+  sky130_fd_pr__pfet_01v8_lvt/4 = 5        |                                           
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |                                           
+                                           |                                           
+Net: VSS                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 5    |                                           
+  sky130_fd_pr__nfet_01v8_lvt/4 = 6        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: net1                                  |(no matching net)                          
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__pfet_01v8_lvt/2 = 2        |                                           
+                                           |                                           
+Net: G2                                    |(no matching net)                          
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8_lvt/2 = 2        |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |                                           
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: opamp                           |Circuit 2: sch_opamp.spice                 
+Circuit 1: sch_opamp.spice                 |Circuit 2: opamp                           
 
 ---------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8_lvt_ZQZ9 |Instance: sky130_fd_pr__pfet_01v8_lvt:M8   
-  (1,3) = (10,10)                          |  (1,3) = (11,6)                           
-  2 = 10                                   |  2 = 2                                    
-  4 = 5                                    |  4 = 11                                   
+Instance: sky130_fd_pr__pfet_01v8_lvt:M8   |Instance: sky130_fd_pr__pfet_01v8_lvt_ZQZ9 
+  (1,3) = (11,6)                           |  (1,3) = (10,10)                          
+  2 = 2                                    |  2 = 10                                   
+  4 = 11                                   |  4 = 5                                    
                                            |                                           
-Instance: sky130_fd_pr__pfet_01v8_lvt_3VR9 |Instance: sky130_fd_pr__pfet_01v8_lvt:M5   
-  (1,3) = (10,2)                           |  (1,3) = (11,2)                           
-  2 = 2                                    |  2 = 4                                    
-  4 = 5                                    |  4 = 11                                   
+Instance: sky130_fd_pr__pfet_01v8_lvt:M5   |Instance: sky130_fd_pr__pfet_01v8_lvt_3VR9 
+  (1,3) = (11,2)                           |  (1,3) = (10,2)                           
+  2 = 4                                    |  2 = 2                                    
+  4 = 11                                   |  4 = 5                                    
                                            |                                           
-Instance: sky130_fd_pr__pfet_01v8_lvt_ZQZ9 |Instance: sky130_fd_pr__pfet_01v8_lvt:M54  
-  (1,3) = (10,2)                           |  (1,3) = (11,4)                           
-  2 = 10                                   |  2 = 4                                    
-  4 = 5                                    |  4 = 11                                   
+Instance: sky130_fd_pr__pfet_01v8_lvt:M54  |Instance: sky130_fd_pr__pfet_01v8_lvt_ZQZ9 
+  (1,3) = (11,4)                           |  (1,3) = (10,2)                           
+  2 = 4                                    |  2 = 10                                   
+  4 = 11                                   |  4 = 5                                    
                                            |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_lvt:ML   
-                                           |  (1,3) = (11,6)                           
-                                           |  2 = 1                                    
-                                           |  4 = 11                                   
+Instance: sky130_fd_pr__pfet_01v8_lvt:ML   |(no matching instance)                     
+  (1,3) = (11,6)                           |                                           
+  2 = 1                                    |                                           
+  4 = 11                                   |                                           
                                            |                                           
                                            |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_lvt:MR   
-                                           |  (1,3) = (11,4)                           
-                                           |  2 = 1                                    
-                                           |  4 = 11                                   
+Instance: sky130_fd_pr__pfet_01v8_lvt:MR   |(no matching instance)                     
+  (1,3) = (11,4)                           |                                           
+  2 = 1                                    |                                           
+  4 = 11                                   |                                           
                                            |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMHZ |Instance: sky130_fd_pr__nfet_01v8_lvt:M10  
-  (1,3) = (9,1)                            |  (1,3) = (11,2)                           
-  2 = 10                                   |  2 = 11                                   
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M10  |Instance: sky130_fd_pr__nfet_01v8_lvt_FMHZ 
+  (1,3) = (11,2)                           |  (1,3) = (9,1)                            
+  2 = 11                                   |  2 = 10                                   
+  4 = 11                                   |  4 = 6                                    
                                            |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK |Instance: sky130_fd_pr__nfet_01v8_lvt:M9   
-  (1,3) = (9,9)                            |  (1,3) = (6,2)                            
-  2 = 9                                    |  2 = 2                                    
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M9   |Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK 
+  (1,3) = (6,2)                            |  (1,3) = (9,9)                            
+  2 = 2                                    |  2 = 9                                    
+  4 = 11                                   |  4 = 6                                    
                                            |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK |Instance: sky130_fd_pr__nfet_01v8_lvt:M12  
-  (1,3) = (9,3)                            |  (1,3) = (11,4)                           
-  2 = 3                                    |  2 = 6                                    
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M12  |Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK 
+  (1,3) = (11,4)                           |  (1,3) = (9,3)                            
+  2 = 6                                    |  2 = 3                                    
+  4 = 11                                   |  4 = 6                                    
                                            |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK |Instance: sky130_fd_pr__nfet_01v8_lvt:M6   
-  (1,3) = (10,9)                           |  (1,3) = (11,2)                           
-  2 = 1                                    |  2 = 4                                    
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M6   |Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK 
+  (1,3) = (11,2)                           |  (1,3) = (10,9)                           
+  2 = 4                                    |  2 = 1                                    
+  4 = 11                                   |  4 = 6                                    
                                            |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMMQ |Instance: sky130_fd_pr__nfet_01v8_lvt:M2   
-  (1,3) = (2,1)                            |  (1,3) = (11,6)                           
-  2 = 2                                    |  2 = 6                                    
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M2   |Instance: sky130_fd_pr__nfet_01v8_lvt_FMMQ 
+  (1,3) = (11,6)                           |  (1,3) = (2,1)                            
+  2 = 6                                    |  2 = 2                                    
+  4 = 11                                   |  4 = 6                                    
                                            |                                           
-Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK |Instance: sky130_fd_pr__nfet_01v8_lvt:M18  
-  (1,3) = (9,2)                            |  (1,3) = (11,4)                           
-  2 = 9                                    |  2 = 4                                    
-  4 = 6                                    |  4 = 11                                   
+Instance: sky130_fd_pr__nfet_01v8_lvt:M18  |Instance: sky130_fd_pr__nfet_01v8_lvt_FMZK 
+  (1,3) = (11,4)                           |  (1,3) = (9,2)                            
+  2 = 4                                    |  2 = 9                                    
+  4 = 11                                   |  4 = 6                                    
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 
 Subcircuit pins:
-Circuit 1: opamp                           |Circuit 2: sch_opamp.spice                 
+Circuit 1: sch_opamp.spice                 |Circuit 2: opamp                           
 -------------------------------------------|-------------------------------------------
-VCC                                        |(no matching pin)                          
-VSS                                        |(no matching pin)                          
-Cell pin lists are equivalent.
-Device classes opamp and sch_opamp.spice are equivalent.
+(no matching pin)                          |DIFFOUT                                    
+(no matching pin)                          |MINUS                                      
+(no matching pin)                          |PLUS                                       
+(no matching pin)                          |ADJ                                        
+(no matching pin)                          |VCC                                        
+(no matching pin)                          |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for sch_opamp.spice and opamp altered to match.
+Device classes sch_opamp.spice and opamp are equivalent.
 
-Final result: Netlists do not match.
+Final result: Top level cell failed pin matching.
